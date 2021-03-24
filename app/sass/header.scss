@@ -1,0 +1,59 @@
+.header {
+  background-color: #31353d;
+  color: $logo-color;
+  $header-gutter: 10;
+  &__container {
+    max-width: $maxWidthContainer + $header-gutter * 2 + px;
+    padding: 0px $header-gutter + px;
+    margin: 0px auto;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    position: relative;
+    top: 5px;
+  }
+  &__nav {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    & ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 0 1 auto;
+    }
+  }
+  &__item {
+    height: 100px;
+    line-height: 100px;
+    padding: 0px 13px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    position: relative;
+    @media (min-width: $md2+px) {
+      overflow: hidden;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -1000px;
+        height: 4px;
+        width: 100%;
+        background-color: $logo-color;
+        transition: all 0.7s cubic-bezier(0.9, 0.16, 0, 0.28) 0s;
+      }
+      &:hover {
+        &::before {
+          left: 0;
+        }
+      }
+    }
+  }
+}
+@import "burger";

@@ -1,0 +1,87 @@
+@import "mixins";
+@import "nullstyle";
+@import "preloader";
+@import "vars";
+@import "fonts";
+body {
+  overflow: hidden;
+  font-family: $main-font, $family;
+  color: $base-color;
+  font-weight: $base-font-weight;
+  font-size: $base-font-size;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+// блок прижатия футера
+header.header {
+  flex: 0 0 auto;
+}
+main.main {
+  flex: 1 1 auto;
+}
+footer.footer {
+  flex: 0 0 auto;
+}
+._container {
+  max-width: $maxWidthContainer + px;
+  margin: 0px auto;
+  @media (max-width: $md1+px) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+.title {
+}
+.img-container {
+  position: relative;
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.read-more {
+  &::before {
+    content: "/";
+    top: 50%;
+    right: -15px;
+  }
+}
+.logo {
+  position: relative;
+  height: 38px;
+  width: 132px;
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+// .logo {
+//   font-family: Revalia, sans-serif;
+//   font-size: 48px;
+//   font-style: normal;
+//   font-weight: normal;
+//   line-height: 60px;
+//   text-align: center;
+//   text-transform: uppercase;
+//   color: $logo-color;
+// }
+@import "header";
+// burger inside
