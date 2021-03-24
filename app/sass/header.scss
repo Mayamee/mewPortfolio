@@ -1,7 +1,16 @@
 .header {
-  background-color: #31353d;
   color: $logo-color;
   $header-gutter: 10;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #31353d;
+  }
   &__container {
     max-width: $maxWidthContainer + $header-gutter * 2 + px;
     padding: 0px $header-gutter + px;
@@ -11,6 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
   }
   &__logo {
     position: relative;
