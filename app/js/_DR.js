@@ -5,4 +5,5 @@ $(document).ready(function () {
     $(".preloader").remove();
   }, 800);
   //   require ready function
+  $("#date").html(`${new Date().getFullYear()}`);
 });
