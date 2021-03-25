@@ -1,6 +1,10 @@
 .header {
   color: $logo-color;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
   &::before {
     position: absolute;
     content: "";
@@ -19,16 +23,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 80px;
   }
   &__logo {
     position: relative;
     top: 5px;
   }
   &__nav {
-    flex: 1 1 auto;
-    display: flex;
-    justify-content: flex-end;
     & ul {
       display: flex;
       justify-content: space-between;
@@ -37,7 +38,7 @@
     }
   }
   &__item {
-    line-height: 100px;
+    line-height: 80px;
     padding: 0px 13px;
     font-size: 16px;
     font-style: normal;
