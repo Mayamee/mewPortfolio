@@ -13,6 +13,9 @@
     right: 0;
     bottom: 0;
     background-color: #31353d;
+    @media (max-width: $md3 + px) {
+      z-index: 3;
+    }
   }
   &__container {
     max-width: $maxWidthContainer + $header-gutter * 2 + px;
@@ -24,12 +27,28 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    @media (max-width: $md3 + px) {
+    }
   }
   &__logo {
     position: relative;
     top: 5px;
+    flex: 0 0 150px;
+    z-index: 3;
+    & img {
+      display: block;
+      max-width: 100%;
+    }
   }
   &__nav {
+    @media (max-width: $md3 + px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+    }
     & ul {
       display: flex;
       justify-content: space-between;
