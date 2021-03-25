@@ -3,6 +3,7 @@
 @import "preloader";
 @import "vars";
 @import "fonts";
+@import "../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
 body {
   height: 100%;
   font-family: $main-font, $family;
