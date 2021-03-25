@@ -31,12 +31,17 @@
     }
   }
   &__logo {
+    flex: 0 0 150px;
     position: relative;
     top: 5px;
+<<<<<<< HEAD
     flex: 0 0 150px;
     z-index: 3;
     & img {
       display: block;
+=======
+    & img {
+>>>>>>> e4930dd736d51bbd27de76fd69b0fc510ed01c51
       max-width: 100%;
     }
   }
