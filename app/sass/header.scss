@@ -1,6 +1,5 @@
 .header {
   color: $logo-color;
-  $header-gutter: 10;
   position: relative;
   &::before {
     position: absolute;
@@ -38,7 +37,6 @@
     }
   }
   &__item {
-    height: 100px;
     line-height: 100px;
     padding: 0px 13px;
     font-size: 16px;
