@@ -1,0 +1,9 @@
+.logo-block {
+  &__logo {
+    margin-bottom: 20px;
+    width: 120px;
+    & img {
+      max-width: 100%;
+    }
+  }
+}

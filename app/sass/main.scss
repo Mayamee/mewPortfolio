@@ -43,17 +43,6 @@ footer.footer {
 }
 .title {
 }
-.img-container {
-  position: relative;
-  & img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
 .read-more {
   &::before {
     content: "/";
@@ -77,6 +66,8 @@ footer.footer {
 ._lock {
   overflow: hidden;
 }
+
+@import "custom";
 @import "header";
 // burger inside
 @import "main_block";

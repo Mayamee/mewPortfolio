@@ -1,2 +1,23 @@
 .footer {
+  position: relative;
+  &__body {
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__sublabel {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: $dark;
+  }
 }
