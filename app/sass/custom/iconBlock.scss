@@ -1,12 +1,15 @@
 .icon-block {
-  width: 30px;
-  height: 30px;
-  display: block;
-  position: relative;
-  & img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 100%;
+  display: flex;
+  &__link {
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: relative;
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      max-width: 100%;
+    }
   }
 }
