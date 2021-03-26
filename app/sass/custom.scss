@@ -1,3 +1,30 @@
+@import "./custom/preloader.scss";
+@import "./custom/burger.scss";
 @import "./custom/iconBlock.scss";
 @import "./custom/logoBlock.scss";
 @import "./custom/img.scss";
+.read-more {
+  &::before {
+    content: "/";
+    top: 50%;
+    right: -15px;
+  }
+}
+.logo {
+  position: relative;
+  height: 38px;
+  width: 132px;
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+._lock {
+  overflow: hidden;
+}
+.title {
+}

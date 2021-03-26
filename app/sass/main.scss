@@ -1,6 +1,5 @@
 @import "mixins";
 @import "nullstyle";
-@import "preloader";
 @import "vars";
 @import "fonts";
 @import "../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
@@ -41,32 +40,6 @@ footer.footer {
     padding: 0 10px;
   }
 }
-.title {
-}
-.read-more {
-  &::before {
-    content: "/";
-    top: 50%;
-    right: -15px;
-  }
-}
-.logo {
-  position: relative;
-  height: 38px;
-  width: 132px;
-  & img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-._lock {
-  overflow: hidden;
-}
-
 @import "custom";
 @import "header";
 // burger inside
