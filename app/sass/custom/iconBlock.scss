@@ -10,7 +10,6 @@ $icon-padding: 10;
     padding: 0px #{$icon-padding}px;
     width: #{$size-icons + $icon-padding * 2}px;
     height: #{$size-icons}px;
-    display: block;
     &:last-child {
       padding-right: 0;
     }
