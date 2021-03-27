@@ -24,6 +24,9 @@
     object-fit: cover;
   }
 }
+._none {
+  display: none;
+}
 ._lock {
   overflow: hidden;
 }

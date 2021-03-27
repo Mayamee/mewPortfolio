@@ -1,8 +1,8 @@
 $(document).ready(function () {
   $(".preloader").addClass("fadeOut");
   $(".preloader__elem").addClass("scale");
-  setTimeout(() => {
-    $(".preloader").remove();
+  setTimeout(function () {
+    $(".preloader").addClass("_none");
   }, 800);
   //   require ready function
   $("#date").html(`${new Date().getFullYear()}`);
