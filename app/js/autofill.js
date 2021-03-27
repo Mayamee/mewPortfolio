@@ -372,4 +372,3 @@ LoremIpsum.prototype.gaussMS = function (mean, standard_deviation) {
   return Math.round(this.gauss() * standard_deviation + mean);
 };
 const lips = new LoremIpsum();
-console.log(lips.generate(500));

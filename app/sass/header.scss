@@ -17,11 +17,6 @@
       z-index: 3;
     }
   }
-  &__container {
-    max-width: $maxWidthContainer + $header-gutter * 2 + px;
-    padding: 0px $header-gutter + px;
-    margin: 0px auto;
-  }
   &__body {
     display: flex;
     justify-content: space-between;
