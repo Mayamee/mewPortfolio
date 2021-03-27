@@ -6,4 +6,5 @@ $(document).ready(function () {
   }, 800);
   //   require ready function
   $("#date").html(`${new Date().getFullYear()}`);
+  $("*#content-fill").html(lips.generate(1000));
 });
