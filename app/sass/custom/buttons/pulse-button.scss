@@ -1,5 +1,5 @@
-$pulse-width: 200;
-$pulse-height: 50;
+$pulse-width: 180;
+$pulse-height: 15;
 $pulse-gutter: 15;
 $pulse-ttf: "uppercase";
 $pulse-fz: 16px;
@@ -23,6 +23,7 @@ $pulse-circleColor: 8px solid #5352924d; //border
 }
 
 .button {
+  line-height: $pulse-height + px;
   text-align: center;
   min-width: $pulse-width + px;
   min-height: $pulse-height + px;
@@ -61,7 +62,7 @@ $pulse-circleColor: 8px solid #5352924d; //border
 .button:hover,
 .button:focus {
   color: $pulse-hoverColor;
-  transform: translateY(-2px);
+  transform: scale(1.06);
 }
 
 .button:hover::before,

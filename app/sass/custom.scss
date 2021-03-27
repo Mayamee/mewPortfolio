@@ -4,7 +4,9 @@
 @import "./custom/logoBlock.scss";
 @import "./custom/img.scss";
 @import "./custom/fullscreen.scss";
-@import "./custom/buttons/pulse-button.scss";
+// @import "./custom/buttons/pulse-button.scss";
+@import "./custom/buttons/screw-button.scss";
+@import "./custom/ibg";
 .read-more {
   &::before {
     content: "/";
@@ -34,6 +36,9 @@
 .title {
   font-weight: 500;
   font-size: 48px;
-  line-height: 79px;
+  line-height: 100%;
   color: #000;
+  @media (max-width: $md2 + px) {
+    font-size: 40px;
+  }
 }
