@@ -1,7 +1,7 @@
-@import "mixins";
-@import "nullstyle";
-@import "vars";
-@import "fonts";
+@import "./_work/mixins.scss";
+@import "./_work/nullstyle.scss";
+@import "./_work/vars.scss";
+@import "./_work/fonts.scss";
 @import "../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
 html,
 body {
@@ -42,7 +42,8 @@ footer.footer {
   }
 }
 @import "custom";
-@import "header";
+@import "./blocks/header.scss";
 // burger inside
-@import "main-screen.scss";
-@import "footer";
+@import "./blocks/main-screen.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/help-info.scss";
