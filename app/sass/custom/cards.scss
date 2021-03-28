@@ -6,6 +6,12 @@
     @media (max-width: $md1 + px) {
       justify-content: center;
     }
+    margin-bottom: 40px;
+    @media (max-width: $md1 + px) {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__image {
@@ -22,6 +28,9 @@
 
   &__text-block {
     padding-left: 25px;
+    @media (max-width: $md3 + px) {
+      padding-left: 15px;
+    }
   }
 
   &__title {
@@ -34,5 +43,6 @@
   &__text {
     font-size: 15px;
     line-height: 20px;
+    max-width: 250px;
   }
 }
