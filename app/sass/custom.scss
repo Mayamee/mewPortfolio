@@ -4,9 +4,9 @@
 @import "./custom/logoBlock.scss";
 @import "./custom/img.scss";
 @import "./custom/fullscreen.scss";
-// @import "./custom/buttons/pulse-button.scss";
 @import "./custom/buttons/screw-button.scss";
 @import "./custom/ibg";
+@import "./custom/cards.scss";
 .read-more {
   &::before {
     content: "/";
