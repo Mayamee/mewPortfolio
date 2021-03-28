@@ -1,13 +1,35 @@
 .cards {
   &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   &__image {
+    padding: 0px 0px 85px 0px;
+    flex: 0 0 85px;
+    position: relative;
+    & img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__text-block {
+    padding-left: 25px;
   }
 
   &__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
   }
 
   &__text {
+    font-size: 15px;
+    line-height: 20px;
   }
 }
