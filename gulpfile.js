@@ -103,6 +103,7 @@ function buildcopy() {
       "app/css/**/*.min.css",
       "app/js/**/*.min.js",
       "app/img/dest/**/*",
+      "app/img/svg/**/*",
       "app/**/*.html",
     ],
     { base: "app" }
