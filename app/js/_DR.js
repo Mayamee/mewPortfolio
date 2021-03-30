@@ -6,5 +6,5 @@ $(document).ready(function () {
   }, 800);
   //   require ready function
   $("#date").html(`${new Date().getFullYear()}`);
-  $(".slider").slick({});
+  $(".slider").slick({ arrows: true, dots: true, slidesToShow: 3 });
 });
