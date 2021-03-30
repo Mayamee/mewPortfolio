@@ -20,19 +20,30 @@ $(document).ready(function () {
         breakpoint: 1210,
         settings: {
           slidesToShow: 2,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 880,
-        settings: {
-          slidesToShow: 1,
+          adaptiveWidth: true,
           arrows: 0,
         },
       },
       {
-        breakpoint: 480,
-        settings: {},
+        breakpoint: 992,
+        settings: { slidesToShow: 2, adaptiveWidth: true, arrows: 0 },
+      },
+      {
+        breakpoint: 880,
+        settings: {
+          slidesToShow: 2,
+          adaptiveWidth: true,
+          arrows: 0,
+        },
+      },
+
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          adaptiveWidth: true,
+          arrows: 0,
+        },
       },
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
