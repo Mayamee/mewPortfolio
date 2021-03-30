@@ -8,16 +8,12 @@
 } /* Лента слайдов */
 .slick-track {
   display: flex;
+  align-items: center;
 }
 .slider {
   position: relative;
   padding: 0px 100px;
-  & .slick-slide {
-    background-color: $deep;
-  }
-  & .slick-slide.slick-current {
-    text-align: center;
-  } /* Слайд по центру */
+
   & .slick-arrow {
     position: absolute;
     top: 50%;
