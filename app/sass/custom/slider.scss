@@ -1,5 +1,6 @@
 .slider {
   &__item {
+    // margin: 0px 15px;
   }
 }
 /* Ограничивающая оболочка */
@@ -10,10 +11,27 @@
   display: flex;
   align-items: center;
 }
+
 .slider {
   position: relative;
   padding: 0px 100px;
-
+  & .slick-slide {
+    & div {
+      @media (max-width: 1210px) {
+        padding: 0px 5px;
+      }
+    }
+    &.center-slide {
+      & .card {
+        @media (min-width: 1210px) {
+          height: 550px;
+          padding-top: 25px;
+          padding-bottom: 25px;
+          background-color: $active;
+        }
+      }
+    }
+  }
   & .slick-arrow {
     position: absolute;
     top: 50%;

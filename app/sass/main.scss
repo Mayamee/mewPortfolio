@@ -10,6 +10,7 @@ body {
   color: $base-color;
   font-weight: $base-font-weight;
   font-size: $base-font-size;
+  overflow-x: hidden;
 }
 .wrapper {
   display: flex;

@@ -9,10 +9,40 @@ $(document).ready(function () {
   $(".slider").slick({
     arrows: true,
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 300,
     slidesToShow: 3,
-    centerMode: true,
+    slidesToScroll: 1,
+    centerMode: false,
     variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 1210,
+        settings: {
+          slidesToShow: 2,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 880,
+        settings: {
+          slidesToShow: 1,
+          arrows: 0,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {},
+      },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ],
+  });
+  //   $("*.slick-slide").;
+  $(".slick-current").next().addClass("center-slide");
+  $(".slider").on("afterChange", function () {
+    $("*.slick-slide").removeClass("center-slide");
+    $(".slick-current").next().addClass("center-slide");
   });
 });
