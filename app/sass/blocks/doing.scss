@@ -1,5 +1,7 @@
 .doing {
   &__container {
+    max-width: 1480px;
+    margin: 0px auto;
   }
 
   &__title {
@@ -9,5 +11,6 @@
   }
 
   &__slider {
+    margin-top: 80px;
   }
 }

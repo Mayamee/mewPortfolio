@@ -1,95 +1,102 @@
 .slider {
   &__item {
   }
-  .slider {
-    position: relative;
-    padding: 0px 100px;
-    & .slick-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-100%);
-      z-index: 10;
-      // <info>убрали надписи на кнопках
-      font-size: 0;
-      // </info>
-      width: 75px;
-      height: 75px;
-      &.slick-disabled {
-        opacity: 0.2;
-      }
-    }
-    & .slick-arrow.slick-prev {
-      left: 0;
-      background: url("../../img/dest/arrow_l.svg") 0 0 / 100% no-repeat;
-    }
-    & .slick-arrow.slick-next {
-      right: 0;
-      background: url("../../img/dest/arrow_r.svg") 0 0 / 100% no-repeat;
-    }
-    & .slick-dots {
-      margin-top: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      & li {
-        // .slick-dots li.slick-active {
-        & button {
-          height: 25px;
-          width: 25px;
-          border: 2px solid $logo-color;
-          border-radius: 50%;
-          font-size: 0;
-          margin: 0px 10px;
-        }
-      }
-      & li.slick-active {
-        & button {
-          background-color: #fff;
-        }
-      }
-    }
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+} /* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+.slider {
+  position: relative;
+  padding: 0px 100px;
+  & .slick-slide {
+    background-color: $deep;
   }
-  /* Слайдер */
-  .slick-slider {
-  } /* Слайдер запущен */
-  .slick-slider.slick-initialized {
-  } /* Слайдер с точками */
-  .slick-slider.slick-dotted {
-  }
-  /* Ограничивающая оболочка */
-  .slick-list {
-    overflow: hidden;
-  } /* Лента слайдов */
-  .slick-track {
-    display: flex;
-  }
-  /* Слайд */
-  .slick-slide {
-  } /* Слайд активный (показывается) */
-  .slick-slide.slick-active {
-  } /* Слайд основной */
-  .slick-slide.slick-current {
+  & .slick-slide.slick-current {
+    text-align: center;
   } /* Слайд по центру */
-  .slick-slide.slick-center {
-  } /* Клонированный слайд */
-  .slick-slide.slick-cloned {
+  & .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    z-index: 10;
+    // <info>убрали надписи на кнопках
+    font-size: 0;
+    // </info>
+    width: 75px;
+    height: 75px;
+    &.slick-disabled {
+      opacity: 0.2;
+    }
   }
-  /* Стрелка */
-  .slick-arrow {
-  } /* Стрелка влево */
-  .slick-arrow.slick-prev {
-  } /* Стрелка вправо */
-  .slick-arrow.slick-next {
-  } /* Стрелка не активная */
-  .slick-arrow.slick-disabled {
+  & .slick-arrow.slick-prev {
+    left: 0;
+    background: url("../../img/svg/slider-arrow_left.svg") 0 0 / 100% no-repeat;
   }
-  /* Точки (булиты) */
-  .slick-dots {
+  & .slick-arrow.slick-next {
+    right: 0;
+    background: url("../../img/svg/slider-arrow_right.svg") 0 0 / 100% no-repeat;
   }
-  .slick-dots li {
-  } /* Активная точка */
-  .slick-dots li.slick-active {
-  } /* Элемент точки */
-  .slick-dots li button {
+  & .slick-dots {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & li {
+      // .slick-dots li.slick-active {
+      & button {
+        height: 25px;
+        width: 25px;
+        border: 2px solid $logo-color;
+        border-radius: 50%;
+        font-size: 0;
+        margin: 0px 10px;
+      }
+    }
+    & li.slick-active {
+      & button {
+        background-color: $logo-color;
+      }
+    }
   }
+}
+/* Слайдер */
+.slick-slider {
+} /* Слайдер запущен */
+.slick-slider.slick-initialized {
+} /* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+
+/* Слайд */
+.slick-slide {
+} /* Слайд активный (показывается) */
+.slick-slide.slick-active {
+} /* Слайд основной */
+.slick-slide.slick-current {
+} /* Слайд по центру */
+.slick-slide.slick-center {
+} /* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+} /* Стрелка влево */
+.slick-arrow.slick-prev {
+} /* Стрелка вправо */
+.slick-arrow.slick-next {
+} /* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+}
+.slick-dots li {
+} /* Активная точка */
+.slick-dots li.slick-active {
+} /* Элемент точки */
+.slick-dots li button {
 }
