@@ -3,9 +3,7 @@ $icon-padding: 10;
 .icon-block {
   display: flex;
   justify-content: space-between;
-  @media (max-width: $md4 + px) {
-    flex-wrap: wrap;
-  }
+
   &__link {
     padding: 0px #{$icon-padding}px;
     width: #{$size-icons + $icon-padding * 2}px;
@@ -13,15 +11,7 @@ $icon-padding: 10;
     &:last-child {
       padding-right: 0;
     }
-    @media (max-width: $md4 + px) {
-      flex: 0 0 50%;
-      margin-bottom: 10px;
-    }
-    @media (max-width: $md4 + px) {
-      $icon-padding: $icon-padding * 0.4;
-      padding: 0px #{$icon-padding}px;
-      width: #{$size-icons + $icon-padding * 2}px;
-    }
+
     & img {
       top: 0;
       left: 0;

@@ -20,20 +20,23 @@
     margin: 0px auto;
     margin-bottom: 40px;
   }
-
+  &__link-wrapper {
+    margin-right: 20px;
+    text-align: center;
+  }
   &__body {
   }
   &__footer {
     margin-top: 40px;
+    @media (max-width: 600px) {
+      margin-top: 0;
+    }
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 570px) {
-      flex-wrap: wrap;
-    }
   }
 }
-.icon-block_form {
+.form__icon-block {
   position: relative;
   &::before {
     position: absolute;
@@ -109,36 +112,80 @@
   text-transform: uppercase;
   overflow: hidden;
   transition: 0.5s;
-  letter-spacing: 4px;
-  @media (max-width: 570px) {
-    flex: 1 1 100%;
+  letter-spacing: 2px;
+}
+@media (max-width: $md2 + px) {
+  .login-box form .submit span {
+    display: none;
+  }
+  .login-box form .submit {
+    background-color: $accent;
+    border-radius: 10px;
+    letter-spacing: 2px;
   }
 }
-
-.login-box .submit:hover {
-  @media (min-width: $md2 + px) {
+@media (max-width: 600px) {
+  .form__footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .form__link-wrapper {
+    flex: 1 1 100%;
+    margin: 0px 0px 40px 0px;
+  }
+}
+@media (min-width: $md2 + px) {
+  .login-box .submit:hover {
     background: $logo-color;
     color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 5px $logo-color, 0 0 25px $logo-color, 0 0 50px $logo-color,
       0 0 100px $logo-color;
   }
-}
 
-.login-box .submit span {
-  position: absolute;
-  display: block;
-}
+  .login-box .submit span {
+    position: absolute;
+    display: block;
+  }
 
-.login-box .submit span:nth-child(1) {
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, $logo-color);
-  animation: btn-anim1 1s linear infinite;
-}
+  .login-box .submit span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, $logo-color);
+    animation: btn-anim1 1s linear infinite;
+  }
 
+  .login-box .submit span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, $logo-color);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+  }
+
+  .login-box .submit span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, $logo-color);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, $logo-color);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+  }
+}
 @keyframes btn-anim1 {
   0% {
     left: -100%;
@@ -148,17 +195,6 @@
     left: 100%;
   }
 }
-
-.login-box .submit span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, $logo-color);
-  animation: btn-anim2 1s linear infinite;
-  animation-delay: 0.25s;
-}
-
 @keyframes btn-anim2 {
   0% {
     top: -100%;
@@ -168,17 +204,6 @@
     top: 100%;
   }
 }
-
-.login-box .submit span:nth-child(3) {
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, $logo-color);
-  animation: btn-anim3 1s linear infinite;
-  animation-delay: 0.5s;
-}
-
 @keyframes btn-anim3 {
   0% {
     right: -100%;
@@ -187,16 +212,6 @@
   100% {
     right: 100%;
   }
-}
-
-.login-box a span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, $logo-color);
-  animation: btn-anim4 1s linear infinite;
-  animation-delay: 0.75s;
 }
 
 @keyframes btn-anim4 {
