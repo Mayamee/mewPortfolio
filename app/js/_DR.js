@@ -9,24 +9,30 @@ $(document).ready(function () {
   $(".slider").slick({
     arrows: true,
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: false,
-    variableWidth: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
     responsive: [
       {
         breakpoint: 1210,
         settings: {
           slidesToShow: 2,
           adaptiveWidth: true,
-          arrows: 0,
+          infinite: true,
+          arrows: true,
         },
       },
       {
         breakpoint: 992,
-        settings: { slidesToShow: 2, adaptiveWidth: true, arrows: 0 },
+        settings: {
+          slidesToShow: 2,
+          adaptiveWidth: true,
+          arrows: 0,
+          infinite: true,
+        },
       },
       {
         breakpoint: 880,
@@ -34,6 +40,7 @@ $(document).ready(function () {
           slidesToShow: 2,
           adaptiveWidth: true,
           arrows: 0,
+          infinite: true,
         },
       },
 
@@ -43,11 +50,9 @@ $(document).ready(function () {
           slidesToShow: 1,
           adaptiveWidth: true,
           arrows: 0,
+          infinite: true,
         },
       },
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ],
   });
   //   $("*.slick-slide").;
