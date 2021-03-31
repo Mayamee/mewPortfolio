@@ -32,7 +32,8 @@ function scripts() {
     // src(["node_modules/jquery/dist/jquery.min.js", "app/js/app.js"])
     src([
       "node_modules/jquery/dist/jquery.min.js",
-      "app/js/*.js",
+      "app/js/libs/*.js",
+      "app/js/user/*.js",
       "!app/**/*.min.js",
     ])
       .pipe(concat("app.min.js"))

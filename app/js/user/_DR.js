@@ -6,6 +6,7 @@ $(document).ready(function () {
   }, 800);
   //   require ready function
   $("#date").html(`${new Date().getFullYear()}`);
+  $(".form__phone").mask("+7(000)-000-00-00");
   $(".slider").slick({
     arrows: true,
     dots: true,
