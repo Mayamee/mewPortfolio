@@ -28,6 +28,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 570px) {
+      flex-wrap: wrap;
+    }
   }
 }
 .icon-block_form {
@@ -48,7 +51,7 @@
 }
 .login-box {
   margin: 0px auto;
-  width: 600px;
+  max-width: 600px;
   padding: 40px;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
@@ -107,14 +110,19 @@
   overflow: hidden;
   transition: 0.5s;
   letter-spacing: 4px;
+  @media (max-width: 570px) {
+    flex: 1 1 100%;
+  }
 }
 
 .login-box .submit:hover {
-  background: $logo-color;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px $logo-color, 0 0 25px $logo-color, 0 0 50px $logo-color,
-    0 0 100px $logo-color;
+  @media (min-width: $md2 + px) {
+    background: $logo-color;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px $logo-color, 0 0 25px $logo-color, 0 0 50px $logo-color,
+      0 0 100px $logo-color;
+  }
 }
 
 .login-box .submit span {
