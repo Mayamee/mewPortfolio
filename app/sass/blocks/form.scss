@@ -106,13 +106,14 @@
   position: relative;
   display: inline-block;
   padding: 20px 20px;
-  color: $logo-color;
+  color: #fff;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
   transition: 0.5s;
   letter-spacing: 2px;
+  user-select: none;
 }
 @media (max-width: $md2 + px) {
   .login-box form .submit span {
