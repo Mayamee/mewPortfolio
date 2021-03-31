@@ -14,7 +14,10 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
+    pauseOnFocus: true,
+    pauseOnHover: true,
     autoplaySpeed: 5000,
+    pauseOnDotsHover: true,
     responsive: [
       {
         breakpoint: 1210,
@@ -51,6 +54,7 @@ $(document).ready(function () {
           adaptiveWidth: true,
           arrows: 0,
           infinite: true,
+          autoplay: false,
         },
       },
     ],
