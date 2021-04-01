@@ -1,10 +1,5 @@
 .form {
   margin-top: 120px;
-  &_prev {
-  }
-
-  &__container {
-  }
 
   &__title {
     margin-bottom: 30px;
@@ -24,8 +19,7 @@
     margin-right: 20px;
     text-align: center;
   }
-  &__body {
-  }
+
   &__footer {
     margin-top: 40px;
     @media (max-width: 600px) {
