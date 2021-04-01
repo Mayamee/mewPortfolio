@@ -1,3 +1,4 @@
+$card-gutter: 20;
 .gallery {
   color: #fff;
   &__container {
@@ -17,7 +18,7 @@
       justify-content: center;
       align-items: center;
     }
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
 
   &__list {
@@ -50,18 +51,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px -25px;
+    margin: 0px -$card-gutter + px;
+    flex-wrap: wrap;
   }
 
   &__item {
-    padding: 0px 25px;
+    margin-top: $card-gutter * 2 + px;
+    padding: 0px $card-gutter + px;
     flex: 0 0 33.3333%;
   }
 
   &__card {
+    border-radius: 10px;
     height: 400px;
-    border: 1px solid #000;
     position: relative;
+    &:hover {
+      .gallery__hover-block {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
 
   &__hover-block {
@@ -73,25 +82,58 @@
   left: 0;
   right: 0;
   bottom: 0;
-  //   opacity: 0;
-  //   visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
   &__wrapper {
+    border-radius: 10px;
+    color: inherit;
+    position: relative;
     background-color: rgba(53, 53, 53, 0.596);
     height: 100%;
     width: 100%;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 40px;
+      width: 10px;
+      height: 103%;
+      border-radius: 3px;
+      background-color: $logo-color;
+    }
   }
 
   &__visited {
+    align-self: flex-end;
     height: 50px;
     width: 50px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
   }
 
   &__img-link {
+    width: 70px;
+    height: 70px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
   }
 
   &__description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    align-self: flex-end;
   }
 }
