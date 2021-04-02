@@ -159,8 +159,20 @@ $card-gutter: 20;
 .gallery {
   &__sizer {
     flex: 0 0 33.333%;
+    @media (max-width: $md2 + px) {
+      flex: 0 0 50%;
+    }
+    @media (max-width: 620px) {
+      flex: 0 0 100%;
+    }
   }
   &__item {
     width: 33.333%;
+    @media (max-width: $md2 + px) {
+      width: 50%;
+    }
+    @media (max-width: 620px) {
+      width: 100%;
+    }
   }
 }
