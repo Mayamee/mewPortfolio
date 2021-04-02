@@ -88,4 +88,30 @@ $(document).ready(function () {
   //     });
   //   });
   //   //   простой фильтр
+  const container = document.querySelector(".gallery__columns");
+  const gallerySizer = document.querySelector(".gallery__sizer");
+  const shuffleGrid = new Shuffle(container, {
+    itemSelector: ".gallery__item",
+    sizer: gallerySizer,
+  });
+  $("#all").on("click", function (e) {
+    e.preventDefault();
+    shuffleGrid.filter();
+  });
+  $("#landing").on("click", function (e) {
+    e.preventDefault();
+    shuffleGrid.filter("landing");
+  });
+  $("#quiz").on("click", function (e) {
+    e.preventDefault();
+    shuffleGrid.filter("quiz");
+  });
+  $("#blog").on("click", function (e) {
+    e.preventDefault();
+    shuffleGrid.filter("blog");
+  });
+  $("#help").on("click", function (e) {
+    e.preventDefault();
+    shuffleGrid.filter("help");
+  });
 });

@@ -219,33 +219,25 @@
               <nav class="gallery__nav">
                 <ul class="gallery__list">
                   <li class="gallery__category">
-                    <a href="#" class="gallery__link" data-filter="all">Все</a>
+                    <a href="#" id="all" class="gallery__link">Все</a>
                   </li>
                   <li class="gallery__category">
-                    <a href="#" class="gallery__link" data-filter="landing"
-                      >Лендинг</a
-                    >
+                    <a href="#" id="landing" class="gallery__link">Лендинг</a>
                   </li>
                   <li class="gallery__category">
-                    <a href="#" class="gallery__link" data-filter="quiz"
-                      >Квиз</a
-                    >
+                    <a href="#" id="quiz" class="gallery__link">Квиз</a>
                   </li>
                   <li class="gallery__category">
-                    <a href="#" class="gallery__link" data-filter="blog"
-                      >Блог</a
-                    >
+                    <a href="#" id="blog" class="gallery__link">Блог</a>
                   </li>
                   <li class="gallery__category">
-                    <a href="#" class="gallery__link" data-filter="help"
-                      >Доработки</a
-                    >
+                    <a href="#" id="help" class="gallery__link">Доработки</a>
                   </li>
                 </ul>
               </nav>
 
               <div class="gallery__columns">
-                <div class="gallery__item" data-cat="landing">
+                <div class="gallery__item" data-groups='["landing"]'>
                   <div class="gallery__card ibg">
                     <img src="./img/dest/template_site.png" alt="" />
                     <div class="gallery__hover-block hover-block">
@@ -261,71 +253,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="gallery__item" data-cat="quiz">
-                  <div class="gallery__card ibg">
-                    <img src="./img/dest/template_site.png" alt="" />
-                    <div class="gallery__hover-block hover-block">
-                      <a href="#" class="hover-block__wrapper">
-                        <div class="hover-block__visited">
-                          <img src="./img/svg/eye.svg" alt="" />
-                        </div>
-                        <div class="hover-block__img-link">
-                          <img src="./img/svg/link.svg" alt="" />
-                        </div>
-                        <div class="hover-block__description">Лендинг</div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery__item" data-cat="blog">
-                  <div class="gallery__card ibg">
-                    <img src="./img/dest/template_site.png" alt="" />
-                    <div class="gallery__hover-block hover-block">
-                      <a href="#" class="hover-block__wrapper">
-                        <div class="hover-block__visited">
-                          <img src="./img/svg/eye.svg" alt="" />
-                        </div>
-                        <div class="hover-block__img-link">
-                          <img src="./img/svg/link.svg" alt="" />
-                        </div>
-                        <div class="hover-block__description">Лендинг</div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery__item" data-cat="blog">
-                  <div class="gallery__card ibg">
-                    <img src="./img/dest/template_site.png" alt="" />
-                    <div class="gallery__hover-block hover-block">
-                      <a href="#" class="hover-block__wrapper">
-                        <div class="hover-block__visited">
-                          <img src="./img/svg/eye.svg" alt="" />
-                        </div>
-                        <div class="hover-block__img-link">
-                          <img src="./img/svg/link.svg" alt="" />
-                        </div>
-                        <div class="hover-block__description">Лендинг</div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery__item" data-cat="blog">
-                  <div class="gallery__card ibg">
-                    <img src="./img/dest/template_site.png" alt="" />
-                    <div class="gallery__hover-block hover-block">
-                      <a href="#" class="hover-block__wrapper">
-                        <div class="hover-block__visited">
-                          <img src="./img/svg/eye.svg" alt="" />
-                        </div>
-                        <div class="hover-block__img-link">
-                          <img src="./img/svg/link.svg" alt="" />
-                        </div>
-                        <div class="hover-block__description">Лендинг</div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery__item" data-cat="help">
+                <div class="gallery__item" data-groups='["help"]'>
                   <div class="gallery__card ibg">
                     <img src="./img/dest/template_site.png" alt="" />
                     <div class="gallery__hover-block hover-block">
@@ -341,12 +269,77 @@
                     </div>
                   </div>
                 </div>
+                <div class="gallery__item" data-groups='["blog"]'>
+                  <div class="gallery__card ibg">
+                    <img src="./img/dest/template_site.png" alt="" />
+                    <div class="gallery__hover-block hover-block">
+                      <a href="#" class="hover-block__wrapper">
+                        <div class="hover-block__visited">
+                          <img src="./img/svg/eye.svg" alt="" />
+                        </div>
+                        <div class="hover-block__img-link">
+                          <img src="./img/svg/link.svg" alt="" />
+                        </div>
+                        <div class="hover-block__description">Лендинг</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__item" data-groups='["landing"]'>
+                  <div class="gallery__card ibg">
+                    <img src="./img/dest/template_site.png" alt="" />
+                    <div class="gallery__hover-block hover-block">
+                      <a href="#" class="hover-block__wrapper">
+                        <div class="hover-block__visited">
+                          <img src="./img/svg/eye.svg" alt="" />
+                        </div>
+                        <div class="hover-block__img-link">
+                          <img src="./img/svg/link.svg" alt="" />
+                        </div>
+                        <div class="hover-block__description">Лендинг</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__item" data-groups='["help"]'>
+                  <div class="gallery__card ibg">
+                    <img src="./img/dest/template_site.png" alt="" />
+                    <div class="gallery__hover-block hover-block">
+                      <a href="#" class="hover-block__wrapper">
+                        <div class="hover-block__visited">
+                          <img src="./img/svg/eye.svg" alt="" />
+                        </div>
+                        <div class="hover-block__img-link">
+                          <img src="./img/svg/link.svg" alt="" />
+                        </div>
+                        <div class="hover-block__description">Помощь</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__item" data-groups='["help"]'>
+                  <div class="gallery__card ibg">
+                    <img src="./img/dest/template_site.png" alt="" />
+                    <div class="gallery__hover-block hover-block">
+                      <a href="#" class="hover-block__wrapper">
+                        <div class="hover-block__visited">
+                          <img src="./img/svg/eye.svg" alt="" />
+                        </div>
+                        <div class="hover-block__img-link">
+                          <img src="./img/svg/link.svg" alt="" />
+                        </div>
+                        <div class="hover-block__description">Помощь</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__sizer"></div>
               </div>
-              <div class="gallery__more-button">
+              <!-- <div class="gallery__more-button">
                 <a href="#" class="gallery__more-btn"
                   ><span></span><span></span><span></span
                 ></a>
-              </div>
+              </div> -->
             </div>
           </div>
         </section>
