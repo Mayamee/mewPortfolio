@@ -66,5 +66,8 @@ $(document).ready(function () {
     $("*.slick-slide").removeClass("center-slide");
     $(".slick-current").next().addClass("center-slide");
   });
-  $();
+  let filter = $("[data-filter");
+  filter.on("click", function (event) {
+    event.preventDefault();
+  });
 });
