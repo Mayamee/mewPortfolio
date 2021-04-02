@@ -2,17 +2,10 @@ $card-gutter: 20;
 .gallery {
   margin-top: 120px;
   color: #fff;
-  &__container {
-  }
-
   &__title {
     margin-bottom: 50px;
     color: #000;
   }
-
-  &__body {
-  }
-
   &__nav {
     ul {
       display: flex;
@@ -22,10 +15,6 @@ $card-gutter: 20;
     }
     margin-bottom: 30px;
   }
-
-  &__list {
-  }
-
   &__category {
     margin-top: 10px;
   }
@@ -83,9 +72,6 @@ $card-gutter: 20;
         visibility: visible;
       }
     }
-  }
-
-  &__hover-block {
   }
   &__more-button {
     margin-top: 70px;
