@@ -56,13 +56,6 @@ $card-gutter: 20;
     margin-top: $card-gutter * 2 + px;
     padding: 0px $card-gutter + px;
     flex: 0 0 33.3333%;
-    // @media (max-width: $md2 + px) {
-    //   flex: 0 0 50%;
-    // }
-    // @media (max-width: 750px) {
-    //   flex: 0 0 100%;
-    //   padding: 0;
-    // }
   }
 
   &__card {
