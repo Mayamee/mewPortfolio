@@ -1,11 +1,12 @@
 $card-gutter: 20;
 .gallery {
+  margin-top: 120px;
   color: #fff;
   &__container {
   }
 
   &__title {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     color: #000;
   }
 
@@ -17,6 +18,7 @@ $card-gutter: 20;
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
     }
     margin-bottom: 30px;
   }
@@ -25,12 +27,15 @@ $card-gutter: 20;
   }
 
   &__category {
+    margin-top: 10px;
   }
 
   &__link {
+    display: block;
+    width: 125px;
+    text-align: center;
     user-select: none;
     border-radius: 10px;
-    display: block;
     margin: 0px 10px;
     padding: 15px 15px;
     color: inherit;
@@ -59,6 +64,13 @@ $card-gutter: 20;
     margin-top: $card-gutter * 2 + px;
     padding: 0px $card-gutter + px;
     flex: 0 0 33.3333%;
+    @media (max-width: $md2 + px) {
+      flex: 0 0 50%;
+    }
+    @media (max-width: 750px) {
+      flex: 0 0 100%;
+      padding: 0;
+    }
   }
 
   &__card {
@@ -74,6 +86,23 @@ $card-gutter: 20;
   }
 
   &__hover-block {
+  }
+  &__more-button {
+    margin-top: 70px;
+    text-align: center;
+  }
+  &__more-btn {
+    display: inline-block;
+    border-bottom: 2px solid #535292;
+    padding: 5px;
+    span {
+      display: inline-block;
+      margin: 0px 2.5px;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: #363636;
+    }
   }
 }
 .hover-block {
