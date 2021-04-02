@@ -32,6 +32,8 @@ function scripts() {
     // src(["node_modules/jquery/dist/jquery.min.js", "app/js/app.js"])
     src([
       "node_modules/jquery/dist/jquery.min.js",
+      "node_modules/shufflejs/dist/shuffle.min.js",
+      //   галерея
       "app/js/libs/*.js",
       "app/js/user/*.js",
       "!app/**/*.min.js",

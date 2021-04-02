@@ -9,6 +9,7 @@
 @import "./custom/cards.scss";
 @import "./custom/slider.scss";
 @import "./custom/card.scss";
+@import "./helpers/hide.scss";
 .read-more {
   &::before {
     content: "/";

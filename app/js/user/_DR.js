@@ -66,8 +66,26 @@ $(document).ready(function () {
     $("*.slick-slide").removeClass("center-slide");
     $(".slick-current").next().addClass("center-slide");
   });
-  let filter = $("[data-filter");
-  filter.on("click", function (event) {
-    event.preventDefault();
-  });
+  //   //   простой фильтр
+  //   let filter = $("[data-filter");
+  //   filter.on("click", function (event) {
+  //     event.preventDefault();
+  //     let cat = $(this).data("filter");
+  //     $("[data-cat]").each(function () {
+  //       let item = $(this).data("cat");
+  //       if (cat == "all") {
+  //         $(this).removeClass("hide");
+  //       } else {
+  //         if (item != cat) {
+  //           $(this).addClass("hide");
+  //           setTimeout(function () {
+  //             $(this).addClass("hide");
+  //           }, 1000);
+  //         } else {
+  //           $(this).removeClass("hide");
+  //         }
+  //       }
+  //     });
+  //   });
+  //   //   простой фильтр
 });
