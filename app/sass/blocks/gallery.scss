@@ -42,6 +42,21 @@ $card-gutter: 20;
         transform: scale(1.1);
       }
     }
+    //   color
+    &.gallery__link {
+      &_red {
+        background-color: $red;
+      }
+      &_purple {
+        background-color: $purple;
+      }
+      &_orange {
+        background-color: $orange;
+      }
+      &_green {
+        background-color: $green;
+      }
+    }
   }
 
   &__columns {
@@ -117,6 +132,29 @@ $card-gutter: 20;
       height: 103%;
       border-radius: 3px;
       background-color: $logo-color;
+    }
+    // color
+    &.hover-block__wrapper {
+      &_red {
+        &::before {
+          background-color: $red;
+        }
+      }
+      &_purple {
+        &::before {
+          background-color: $purple;
+        }
+      }
+      &_orange {
+        &::before {
+          background-color: $orange;
+        }
+      }
+      &_green {
+        &::before {
+          background-color: $green;
+        }
+      }
     }
   }
 
