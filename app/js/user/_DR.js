@@ -61,11 +61,17 @@ $(document).ready(function () {
     ],
   });
   //   $("*.slick-slide").;
-  $(".slick-current").next().addClass("center-slide");
-  $(".slider").on("afterChange", function () {
-    $("*.slick-slide").removeClass("center-slide");
+  function sliderAnimate() {
     $(".slick-current").next().addClass("center-slide");
-  });
+    $(".slider").on("beforeChange", function () {
+      $("*.slick-slide").removeClass("center-slide");
+    });
+    $(".slider").on("afterChange", function () {
+      //   $("*.slick-slide").removeClass("center-slide");
+      $(".slick-current").next().addClass("center-slide");
+    });
+  }
+  sliderAnimate();
   const container = document.querySelector(".gallery__columns");
   const gallerySizer = document.querySelector(".gallery__sizer");
   const shuffleGrid = new Shuffle(container, {
