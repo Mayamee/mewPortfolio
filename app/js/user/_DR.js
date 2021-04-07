@@ -7,6 +7,24 @@ $(document).ready(function () {
   //   require ready function
   $("#date").html(`${new Date().getFullYear()}`);
   $(".form__phone").mask("+7(000)-000-00-00");
+
+  const archors = $("a[href*='#']");
+  for (const arch of archors) {
+    arch.addEventListener("click", function (e) {
+      e.preventDefault();
+      const blockID = $(this).attr("href");
+      const blockToScrolling = $(blockID)[0];
+      const positionOfElem =
+        blockToScrolling.getBoundingClientRect().top +
+        pageYOffset -
+        $(".header").height();
+      window.scrollTo({
+        top: positionOfElem,
+        behavior: "smooth",
+      });
+    });
+  }
+
   $(".slider").slick({
     arrows: true,
     dots: true,

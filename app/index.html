@@ -45,7 +45,7 @@
       </div>
     </div>
     <!-- preloader -->
-    <div class="wrapper">
+    <div class="wrapper" id="top">
       <header class="header">
         <div class="header__container _container">
           <div class="header__body">
@@ -54,10 +54,18 @@
             </div>
             <nav class="header__nav">
               <ul>
-                <li class="header__item">Главная</li>
-                <li class="header__item">Виды работ</li>
-                <li class="header__item">Проекты</li>
-                <li class="header__item">Контакты</li>
+                <li class="header__item">
+                  <a href="#top" class="header__link">Главная</a>
+                </li>
+                <li class="header__item">
+                  <a href="#skills" class="header__link">Виды работ</a>
+                </li>
+                <li class="header__item">
+                  <a href="#projects" class="header__link">Проекты</a>
+                </li>
+                <li class="header__item">
+                  <a href="#form" class="header__link">Контакты</a>
+                </li>
               </ul>
             </nav>
             <div class="header__burger burger">
@@ -97,12 +105,14 @@
                     </h2>
                     <div class="main-screen__btn-block">
                       <div class="main-screen__btn">
-                        <a href="#" class="main__screen__btn screw-button"
+                        <a href="#form" class="main__screen__btn screw-button"
                           >Заказать</a
                         >
                       </div>
                       <div class="main-screen__btn">
-                        <a href="#" class="main__screen__btn screw-button"
+                        <a
+                          href="#projects"
+                          class="main__screen__btn screw-button"
                           >Портфолио</a
                         >
                       </div>
@@ -154,7 +164,7 @@
             </div>
           </div>
         </section>
-        <section class="doing">
+        <section class="doing" id="skills">
           <div class="doing__container">
             <h2 class="doing__title title-decor">Что я могу?</h2>
             <div class="doing__body">
@@ -240,7 +250,7 @@
             </div>
           </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="projects">
           <div class="gallery__container _container">
             <h2 class="gallery__title title-decor">Мои проекты</h2>
             <div class="gallery__body">
@@ -409,7 +419,7 @@
             </div>
           </div>
         </section>
-        <section class="form">
+        <section class="form" id="form">
           <div class="form__container _container">
             <div class="form_prev">
               <h2 class="form__title title-decor">Хотите веб-сайт?</h2>
