@@ -18,13 +18,15 @@ $(document).ready(function () {
         blockToScrolling.getBoundingClientRect().top +
         pageYOffset -
         $(".header").height();
+      $("body").removeClass("_lock");
       window.scrollTo({
         top: positionOfElem,
         behavior: "smooth",
       });
+        $("body").removeClass("_lock");
     });
   }
-
+    // $("body").removeClass("_lock");
   $(".slider").slick({
     arrows: true,
     dots: true,
