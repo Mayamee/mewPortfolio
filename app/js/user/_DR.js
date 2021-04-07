@@ -12,21 +12,24 @@ $(document).ready(function () {
   for (const arch of archors) {
     arch.addEventListener("click", function (e) {
       e.preventDefault();
+      if ($(".burger").hasClass("_active")) {
+        $("body").removeClass("_lock");
+        $(".burger").removeClass("_active");
+        $(".header__nav").removeClass("_active");
+      }
       const blockID = $(this).attr("href");
       const blockToScrolling = $(blockID)[0];
       const positionOfElem =
         blockToScrolling.getBoundingClientRect().top +
         pageYOffset -
         $(".header").height();
-      $("body").removeClass("_lock");
       window.scrollTo({
         top: positionOfElem,
         behavior: "smooth",
       });
-        $("body").removeClass("_lock");
     });
   }
-    // $("body").removeClass("_lock");
+  // $("body").removeClass("_lock");
   $(".slider").slick({
     arrows: true,
     dots: true,

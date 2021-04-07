@@ -64,6 +64,9 @@
     display: block;
     height: 100%;
     width: 100%;
+    @media (max-width: $md2 + px) {
+      font-size: 18px;
+    }
   }
   &__item {
     line-height: 80px;
